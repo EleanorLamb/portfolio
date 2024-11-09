@@ -3,9 +3,10 @@ Title: Home
 Description: This is our index page.
 ---
 
-Home page
-==========================
+<h1> Hey, I'm Nikki! </h1>
+## A Media & UX Designer
 
-The source for this page is in `content/index.md`.
+I enjoy using creativity to solve problems and create digital and  
+printable solutions with the _user experience_ in mind.
 
-This is a sample home page written in markdown with some frontmatter defined.
+![Alt text](image/pagedivider.png?width=24%)

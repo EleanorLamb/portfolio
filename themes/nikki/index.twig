@@ -3,6 +3,11 @@
 <body>
     {% include 'incl/nav.twig' %}
 
+    <!-- Overlay Image Container -->
+    <div class="image-overlay">
+        <img src="{{ base_url }}/{{ pages["_meta"].meta.OverlayImage|url }}" alt="Overlay Image" />
+    </div>
+
     <div class="main" role="main">
         {{ content }}
     </div>

@@ -22,24 +22,97 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    background-color: #e0d5eb;
+    overflow-x: hidden;
+}
+
+/* Main adjustments */
+.main {
+    flex: 1 0 auto;
+    padding: 0 3em;
 }
 
 .main {
-    flex: 1 0 auto;
+    color: #000000; /* Default text color */
+    font-family: Arial, sans-serif; /* Default font */
+}
+
+/* Styling the main title */
+.main h1 {
+    font-size: 5vw; /* 8% of the viewport width */
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+.main h2 {
+    font-size: 3vw;
+    font-weight: bold;
+    margin-top: 1.5em;
+    color: #1c0640;
+}
+
+/* Styling paragraphs */
+.main p {
+    font-size: 1.5vw;
+    line-height: 1.6;
+}
+
+.main img {
+    margin-top: 2em;
 }
 
 .header, .footer {
     flex: 0 0 auto;
 }
 
-/* Header */
-
-.header, .site-header {
-    display: flex;
-    justify-content: space-between;
+.header, .nav {
+    position: relative;
+    z-index: 1;
 }
 
-/* Title */
+/* Style for the overlay image container */
+.image-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; /* Adjust width to control how much it covers */
+    height: auto;
+    z-index: 0; /* Places it behind the header and nav */
+    pointer-events: none; /* Optional: makes the image non-interactive */
+}
+
+.image-overlay img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Adds space between logo and navigation */
+    padding: 0 3em;
+}
+
+.logo {
+    width: 400px;
+    height: auto;
+}
+
+.nav ul {
+    display: flex;
+    gap: 1em; /* Adds spacing between navigation items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 1.5em;
+}
 
 .title, .logo {
     padding: 3em 3em 3em 0;
@@ -68,13 +141,18 @@ body {
 /* Footer */
 
 .footer {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid #222;
+    align-items: center;
+    background-color: #eebfc7;
+    padding: 1em 3em; /* Adjust horizontal padding for spacing */
+    box-sizing: border-box; /* Ensures padding doesn’t affect width */
 }
 
 .footer a {
-    color: #222;
+    color: #000000;
+    text-decoration: none;
 }
 
 .footer .social {
