@@ -1,0 +1,148 @@
+.main {
+  flex: 1 0 auto;
+  padding: 0 3em;
+  color: $font-color;
+}
+
+.main img {
+  margin-top: 2em;
+}
+
+.main .comp {
+  font-size: 2rem;
+}
+
+.page-divider {
+  width: 70%;
+}
+
+@media (max-width: 767px) {
+  .page-divider {
+    width: 70%;
+  }
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 200px;
+  max-width: 100%;
+  padding: 0 50px;
+  margin: 40px auto 80px;
+  box-sizing: border-box;
+}
+
+.icon-container .icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 240px;
+  min-height: 260px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.icon-container .icon-item .fas {
+  font-size: 4.5em;
+  margin-bottom: 12px;
+  color: $accent-color;
+}
+
+.icon-container .icon-item h2 {
+  text-align: center;
+  color: $font-color;
+  font-size: 1.8em;
+  margin-bottom: 8px;
+}
+
+.icon-container .icon-item span {
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .icon-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 20px auto 40px;
+  }
+
+  .icon-container .icon-item {
+    width: 100%;
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  .icon-container .icon-item .fas {
+    font-size: 8em !important;
+  }
+
+  .icon-container .icon-item h2 {
+    font-size: 3.5em;
+  }
+
+  .icon-container .icon-item span {
+    font-size: 3em;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .image-overlay {
+    width: 90%;
+    top: 0;
+    overflow: hidden;
+  }
+
+  .image-overlay img {
+    height: auto;
+    object-fit: cover;
+    margin-left: 30%;
+    margin-top: -10%;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro {
+    position: relative;
+    top: 0;
+    z-index: 2;
+    max-width: 200px;
+    margin-top: 3.5em;
+  }
+
+  .page-divider {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 75%;
+    margin-top: 2em;
+    margin-bottom: 4em;
+  }
+
+  .slogan-headline {
+    font-size: 4em;
+    margin-top: -0.5em;
+  }
+
+  .slogan {
+    font-size: 3em;
+    margin-top: 0.25em;
+  }
+
+  p {
+    font-size: 2em;
+  }
+
+  em {
+    font-size: inherit;
+  }
+}
+

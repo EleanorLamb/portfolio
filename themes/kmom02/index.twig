@@ -1,0 +1,21 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <!-- Only display the image-overlay on the homepage -->
+    {% if current_page.id == "index" %}
+        <div class="image-overlay">
+            <img src="{{ base_url }}/{{ pages["_meta"].meta.OverlayImage|url }}" alt="Overlay Image" />
+        </div>
+    {% endif %}
+
+    <div class="main" role="main">
+        {{ content }}
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>
+
