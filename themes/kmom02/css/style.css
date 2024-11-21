@@ -611,6 +611,179 @@ h6 {
     font-size: inherit;
   }
 }
+.landingpage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landingpage h1:first-of-type {
+  grid-column: 1/-1;
+}
+
+.landingpage a {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0.5em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+.landingpage a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.landingpage a:hover p {
+  font-weight: bold;
+  color: #1c0640;
+}
+
+.landingpage p {
+  font-weight: 500;
+  font-size: 2vw;
+}
+
+.landingpage a:nth-child(2) { /* CSS */
+  grid-column: 1/span 1;
+  grid-row: 2;
+}
+
+.landingpage a:nth-child(3) { /* HTML */
+  grid-column: 2/span 2;
+  grid-row: 2;
+}
+
+.landingpage a:nth-child(4) { /* JavaScript */
+  grid-column: 1/span 2;
+  grid-row: 3;
+}
+
+.landingpage a:nth-child(5) { /* PHP */
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.landingpage a:nth-child(6) { /* Python */
+  grid-column: 1/-1;
+  grid-row: 4;
+}
+
+.landingpage a:nth-child(7) { /* GIT */
+  grid-column: 1/span 1;
+  grid-row: 5;
+}
+
+.landingpage a:nth-child(8) { /* SQLite */
+  grid-column: 2/span 2;
+  grid-row: 5;
+}
+
+@media (max-width: 768px) {
+  .landingpage {
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+  .landingpage a:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .landingpage a:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .landingpage a:nth-child(3) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .landingpage a:nth-child(4) {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .landingpage a:nth-child(5) {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .landingpage a:nth-child(6) {
+    grid-column: 1;
+    grid-row: 6;
+  }
+  .landingpage a:nth-child(7) {
+    grid-column: 1;
+    grid-row: 7;
+  }
+  .landingpage a:nth-child(8) {
+    grid-column: 1;
+    grid-row: 8;
+  }
+}
+.technology {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.technology .article {
+  width: 70%;
+}
+
+.technology .menu {
+  width: 20%;
+}
+
+.menu-title {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 2vw;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0.3em;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.menu-title:hover {
+  font-weight: bolder;
+  color: #1c0640;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0.3em;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .technology {
+    flex-direction: column; /* Stack the menu and article vertically */
+    align-items: stretch; /* Allow the elements to stretch to full width */
+  }
+  .technology .menu {
+    width: 100%; /* Full width for the menu */
+    margin-bottom: 2em; /* Add space below the menu */
+  }
+  .technology .article {
+    width: 100%; /* Full width for the article */
+  }
+  .menu-title {
+    font-size: 3vw; /* Adjust font size for smaller screens */
+    padding: 0.5em;
+    display: block; /* Ensure links behave like block-level elements */
+    margin-bottom: 1em; /* Add space between buttons */
+  }
+}
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
