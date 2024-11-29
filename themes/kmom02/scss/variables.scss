@@ -1,6 +1,9 @@
 $font-color: #000;
 $font-alternative-color: #fff;
 $accent-color: #1c0640;
-$background-color: #e0d5eb;
+$background-color: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
 $background-alternative-color: #e0d5eb;
 $footer-color: #eebfc7;
+$dark-background: linear-gradient(-225deg, #65379b 0%, #886aea 53%, #6457c6 100%);
+
+// linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);

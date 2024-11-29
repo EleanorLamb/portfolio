@@ -1,0 +1,23 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+        <div class="landingpage">
+            {{ content }}
+
+            {% for analysis in meta.Analysis %}
+                <a href="{{ base_url }}/analysis/{{ analysis.class }}">
+                    <div class="box {{ analysis.class }}">
+                        <p>{{ analysis.name }}</p>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

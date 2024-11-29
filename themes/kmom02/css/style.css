@@ -542,6 +542,14 @@ h6 {
   width: 100%;
 }
 
+.article-img {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+  width: 300px;
+  height: auto;
+}
+
 @media (max-width: 768px) {
   .icon-container {
     flex-direction: column;
@@ -567,6 +575,12 @@ h6 {
     width: 100%;
   }
 }
+.analysis-mobile {
+  width: 800px;
+  float: left;
+  margin-right: 30px;
+}
+
 @media (max-width: 767px) {
   .image-overlay {
     width: 90%;
@@ -578,6 +592,9 @@ h6 {
     object-fit: cover;
     margin-left: 30%;
     margin-top: -10%;
+  }
+  .analysis-mobile {
+    width: 340px !important;
   }
 }
 @media (max-width: 767px) {
@@ -606,6 +623,9 @@ h6 {
   }
   p {
     font-size: 2em;
+  }
+  a {
+    font-size: 1em !important;
   }
   em {
     font-size: inherit;
@@ -767,21 +787,21 @@ h6 {
 
 @media (max-width: 768px) {
   .technology {
-    flex-direction: column; /* Stack the menu and article vertically */
-    align-items: stretch; /* Allow the elements to stretch to full width */
+    flex-direction: column;
+    align-items: stretch;
   }
   .technology .menu {
-    width: 100%; /* Full width for the menu */
-    margin-bottom: 2em; /* Add space below the menu */
+    width: 100%;
+    margin-bottom: 2em;
   }
   .technology .article {
-    width: 100%; /* Full width for the article */
+    width: 100%;
   }
   .menu-title {
-    font-size: 3vw; /* Adjust font size for smaller screens */
+    font-size: 3vw;
     padding: 0.5em;
-    display: block; /* Ensure links behave like block-level elements */
-    margin-bottom: 1em; /* Add space between buttons */
+    display: block;
+    margin-bottom: 1em;
   }
 }
 /*!
@@ -6915,6 +6935,6 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  background-color: #e0d5eb;
+  background: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
   line-height: 1.6;
 }

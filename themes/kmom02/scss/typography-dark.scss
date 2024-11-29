@@ -1,0 +1,22 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'DM Serif Text', serif;
+  font-weight: bold;
+  font-size: 5vw;
+  margin: 0;
+  color: $accent-color;
+}
+
+.slogan {
+  color: $background-alternative-color;
+  font-size: 3vw;
+}
+
+.slogan-headline {
+  margin-top: 1em;
+}
+
