@@ -169,5 +169,30 @@
   }
 }
 
+.chart {
+  width: 1000px;
+  height: 800px;
+}
+
+.chart {
+  width: 1000px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .chart {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .chart {
+    width: 100%;
+    height: auto;
+  }
+}
+
 
 
