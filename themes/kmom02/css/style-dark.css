@@ -432,6 +432,42 @@ h6 {
   z-index: 1;
 }
 
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 80px;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav ul li {
+  margin: 0 10px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav ul li a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.nav-toggle {
+  position: absolute;
+  top: 10px; /* Adjust as necessary */
+  right: 10px; /* Adjust as necessary */
+  z-index: 1000; /* Ensure it is above other elements */
+  display: none; /* Initially hidden for larger screens */
+}
+
 .image-overlay {
   position: absolute;
   top: 0;
@@ -484,6 +520,19 @@ h6 {
   .title {
     min-width: 50%;
     padding: 1em 1em 1em 0;
+  }
+}
+@media (max-width: 767px) {
+  .nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    background: #e0d5eb;
+    font-size: 16px !important;
+  }
+  .nav ul li a:hover {
+    font-weight: bold;
   }
 }
 .main {
@@ -633,13 +682,31 @@ h6 {
   p {
     font-size: 2em;
   }
-  a {
-    font-size: 1em !important;
-  }
   em {
     font-size: inherit;
   }
 }
+.chart {
+  width: 1000px;
+  height: 800px;
+}
+
+@media screen and (max-width: 768px) {
+  .chart {
+    width: 90%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .chart {
+    width: 100%;
+    height: auto;
+  }
+}
+.hidden {
+  display: none !important;
+}
+
 .image-grid-container {
   display: flex;
   justify-content: center;

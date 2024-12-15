@@ -73,13 +73,12 @@ Baserat på resultaten rangordnar jag webbplatserna så här:
 2. CSN: Mycket bra på datorer, men den kan förbättras för mobiler.
 3. Rituals: Långsam laddning och låg prestanda, särskilt på mobiler.
 
-Gränsvärde och snabbhet
 Jag tycker att en laddningstid på under 1 sekund känns snabb, medan över 3 sekunder känns långsam. CSN och SVT klarar detta på flera sidor, särskilt på datorer. Rituals däremot, särskilt deras skönhetssida, laddar mycket långsamt och tar över 4 sekunder.
 
 Referenser
 -----------------------
 
-Google Developers. (n.d.). Why speed matters. Retrieved December 5, 2024, from https://web.dev/learn/performance/why-speed-matters/
+Google Developers. (n.d.). Why speed matters. Hämtad december 5, 2024, från https://web.dev/learn/performance/why-speed-matters/
 
 Övrigt
 -----------------------

@@ -13,6 +13,42 @@
   z-index: 1;
 }
 
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 80px;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav ul li {
+  margin: 0 10px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav ul li a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.nav-toggle {
+  position: absolute;
+  top: 10px; /* Adjust as necessary */
+  right: 10px; /* Adjust as necessary */
+  z-index: 1000; /* Ensure it is above other elements */
+  display: none; /* Initially hidden for larger screens */
+}
+
 .image-overlay {
   position: absolute;
   top: 0;
@@ -71,3 +107,17 @@
   }
 }
 
+@media (max-width: 767px) {
+  .nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    background: $background-alternative-color;
+    font-size: 16px !important;
+  }
+
+  .nav ul li a:hover {
+    font-weight: bold;
+  }
+}
